@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing Page Moderna</title>
+  <title>Informe de Evaluación de Edificios</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-gray-800">
@@ -12,40 +12,48 @@
   <header class="relative h-screen bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1740&q=80');">
     <div class="absolute inset-0 bg-black bg-opacity-60"></div>
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-      <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Arquitectura que Inspira</h1>
-      <p class="text-lg md:text-xl text-white mb-8 max-w-2xl">Diseñamos espacios con visión moderna, funcional y sostenible.</p>
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Informes Técnicos de Evaluación de Edificios</h1>
+      <p class="text-lg md:text-xl text-white mb-8 max-w-2xl">Conoce el estado de tu edificio y cumple con la normativa vigente. Evaluamos tu inmueble con criterios técnicos, estructurales y energéticos.</p>
       <a href="#contacto" class="bg-white text-black font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-100 transition">
-        Contáctanos
+        Solicitar Evaluación
       </a>
     </div>
   </header>
 
   <!-- Sección de presentación -->
   <section class="py-16 px-6 md:px-20 bg-white text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">Diseños que transforman</h2>
-    <p class="text-lg text-gray-600 max-w-3xl mx-auto">Unimos estética y funcionalidad en cada proyecto, ofreciendo soluciones arquitectónicas que destacan por su originalidad y calidad.</p>
-    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1740&q=80" alt="Edificio moderno" class="mt-10 w-full rounded-lg shadow-lg max-w-4xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Por qué necesitas un IEE?</h2>
+    <p class="text-lg text-gray-600 max-w-3xl mx-auto">El Informe de Evaluación del Edificio (IEE) es obligatorio para edificaciones con más de 50 años. Garantiza la seguridad estructural, la accesibilidad y la eficiencia energética del inmueble.</p>
+    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1740&q=80" alt="Evaluación de edificio" class="mt-10 w-full rounded-lg shadow-lg max-w-4xl mx-auto">
   </section>
 
   <!-- Formulario de contacto -->
   <section id="contacto" class="py-16 px-6 md:px-20 bg-gray-100">
     <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-8">
-      <h3 class="text-2xl font-bold mb-6 text-center">Contáctanos</h3>
+      <h3 class="text-2xl font-bold mb-6 text-center">Solicita tu Informe</h3>
       <form action="#" method="POST" class="space-y-6">
         <div>
-          <label for="nombre" class="block font-medium mb-1">Nombre</label>
+          <label for="nombre" class="block font-medium mb-1">Nombre completo</label>
           <input type="text" id="nombre" name="nombre" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black" />
         </div>
         <div>
-          <label for="email" class="block font-medium mb-1">Email</label>
+          <label for="email" class="block font-medium mb-1">Correo electrónico</label>
           <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black" />
         </div>
         <div>
-          <label for="mensaje" class="block font-medium mb-1">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black"></textarea>
+          <label for="telefono" class="block font-medium mb-1">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black" />
+        </div>
+        <div>
+          <label for="direccion" class="block font-medium mb-1">Dirección del edificio</label>
+          <input type="text" id="direccion" name="direccion" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black" />
+        </div>
+        <div>
+          <label for="mensaje" class="block font-medium mb-1">Comentarios adicionales</label>
+          <textarea id="mensaje" name="mensaje" rows="4" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black"></textarea>
         </div>
         <button type="submit" class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800 transition">
-          Enviar mensaje
+          Enviar solicitud
         </button>
       </form>
     </div>
@@ -53,7 +61,7 @@
 
   <!-- Footer -->
   <footer class="py-8 bg-black text-white text-center">
-    <p class="text-sm">&copy; 2025 Arquitectura Moderna. Todos los derechos reservados.</p>
+    <p class="text-sm">&copy; 2025 Evaluación Técnica de Edificios. Todos los derechos reservados.</p>
     <p class="text-sm mt-1">Contacto: <a href="mailto:hola@mail.com" class="underline">hola@mail.com</a></p>
   </footer>
 
